@@ -1,0 +1,32 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Cormorant', serif;
+font-family: 'Edu TAS Beginner', cursive; */
+
+:root{
+    --font1:'Amatic SC', cursive;
+    --font2:'Cookie', cursive;
+    --font3:'Amatic SC', cursive;
+}
+
+body {
+    margin:0;
+    width:100%;
+    background-image: linear-gradient(to top right,white,#F71D1D);
+}
+
+#logo{
+    text-align: center;
+    padding: 5px 0;
+    font-family: 'Cormorant', serif;
+    color:white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    font-size:36px;
+    margin:20px 2%;
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+}
