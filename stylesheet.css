@@ -12,7 +12,7 @@ font-family: 'Edu TAS Beginner', cursive; */
 body {
     margin:0;
     width:100%;
-    background-image: linear-gradient(to top right,white,#F71D1D);
+    background-image: linear-gradient(to top right,#F5A4A4,#F71D1D);
 }
 
 #logo{
@@ -26,7 +26,40 @@ body {
     margin:20px 2%;
 }
 
+#inputbar{
+    display:flex;
+    justify-content: center;
+}
+
+#userinput{
+    text-align: center;
+    width:60%;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+}
+
+#enter, .delbut {
+    border:none;
+    color:#F71D1D;
+    background-color: white;
+    border-radius: 25px ;
+    margin: auto 10px;
+    padding:6px 10px;
+}
+
+#enter:hover{
+    cursor:pointer;
+    color:white;
+    background-color: #f3a7a7;
+}
+
 #container{
     display:flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+
+
