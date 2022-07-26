@@ -12,27 +12,23 @@ function removeParent(evt) {
 	deleteBtns[i].addEventListener("click", removeParent, false);
 }
 
-function createListElement() {
+function addListAfterClick() {
+	if (input.value.length > 0) {
 	var li = document.createElement("li");
 	var btn=document.createElement("button");
-	li.appendChild(document.createTextNode(input.value));
-	btn.appendChild(document.createTextNode("-"));
+	li.appendChild(document.createTextNode("\""+input.value + "\""));
+	btn.appendChild(document.createTextNode("REMOVE"));
 	btn.onclick = removeParent;
 	ul.appendChild(li);
 	btn.classList.add('delbut')
 	li.appendChild(btn);
 	input.value = "";
-}
-
-function addListAfterClick() {
-	if (inputLength() > 0) {
-		createListElement();
 	}
 }
 
 function addListAfterKeypress(event) {
-	if (inputLength() > 0 && event.keyCode === 13) {
-		createListElement();
+	if (input.value.length > 0 && event.keyCode === 13) {
+		addListAfterClick();
 	}
 }
  
@@ -40,3 +36,5 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+ul.addEventListener("click", strikeThrough)

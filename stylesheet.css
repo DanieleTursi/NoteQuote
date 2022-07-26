@@ -48,6 +48,13 @@ body {
     padding:6px 10px;
 }
 
+.delbut{
+    border:none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size:8px;
+}
+
 #enter:hover{
     cursor:pointer;
     color:white;
@@ -61,5 +68,11 @@ body {
     align-items: center;
 }
 
+ul li{
+    list-style-type: none;
+    font-family: var(--font2);
+    font-size: 26px;
+    color:white;
+}
 
 
