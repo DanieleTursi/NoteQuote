@@ -39,7 +39,11 @@ body {
     border: none;
 }
 
-#enter, .delbut {
+#userinput::placeholder{
+    color:#F71D1D;
+}
+
+#enter {
     border:none;
     color:#F71D1D;
     background-color: white;
@@ -73,6 +77,19 @@ ul li{
     font-family: var(--font2);
     font-size: 26px;
     color:white;
+    padding: 10px;
 }
 
+footer {
+    margin-top: 400px;
+}
 
+h3{
+    margin: 10px 2%;
+    padding: 3px 0;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    color:white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
