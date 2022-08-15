@@ -3,6 +3,7 @@ var input = document.getElementById("userinput");
 var deleteBtns = document.querySelectorAll(".delbut");
 var ul = document.querySelector("ul");
 const li = document.getElementsByTagName("li");
+
 function removeParent(evt) {
 	evt.target.removeEventListener("click", removeParent, false);
 	evt.target.parentNode.remove();
