@@ -26,24 +26,25 @@ body {
     margin:20px 2%;
 }
 
-#inputbar{
+#inputbar, #genquote{
     display:flex;
     justify-content: center;
 }
 
-#userinput{
+#userinput, #random{
     text-align: center;
     width:60%;
     height: 30px;
     border-radius: 25px;
     border: none;
+    margin:10px;
 }
 
 #userinput::placeholder{
     color:#F71D1D;
 }
 
-#enter {
+#enter, #gen {
     border:none;
     color:#F71D1D;
     background-color: white;
