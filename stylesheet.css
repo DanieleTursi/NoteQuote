@@ -31,6 +31,7 @@ body {
     justify-content: center;
 }
 
+
 #userinput, #random{
     text-align: center;
     width:60%;
@@ -38,19 +39,35 @@ body {
     border-radius: 25px;
     border: none;
     margin:10px;
+    color: #F71D1D;
+    background-color: white;
 }
 
-#userinput::placeholder{
+#random{
+    background-color: rgba(255, 255, 255, 0.592);
+    padding-top: 6px;
+}
+
+#userinput::placeholder, #random::placeholder{
     color:#F71D1D;
 }
 
-#enter, #gen {
+#enter{
     border:none;
     color:#F71D1D;
     background-color: white;
     border-radius: 25px ;
     margin: auto 10px;
     padding:6px 10px;
+}
+
+#gen{
+    border:none;
+    color:#F71D1D;
+    background-color: white;
+    border-radius: 25px ;
+    margin: auto 8px;
+    padding:6px 4px;
 }
 
 .delbut{
