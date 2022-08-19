@@ -33,9 +33,19 @@ function addListAfterKeypress(event) {
 	}
 }
  
-
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
-ul.addEventListener("click", strikeThrough)
+
+
+const quotes=[];
+const getQuote= async (query) => {
+    const url = `https://api.paperquotes.com/quotes?tags=love,life&language=en`
+    await fetch(url)
+        .then((res) => res.text())
+        .then((text) => text.length ? JSON.parse(text) : {})
+        .then(data => { quotes.push(data); }) //api data will be visible in your browser console. 
+        .catch(err => console.warn("ERROR", err));
+    console.log(quote);
+};
