@@ -37,6 +37,26 @@ button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
+let quotesArr=[
+	'The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela',
+    'Life is what happens when you are busy making other plans. -John Lennon',
+	'You must be the change you wish to see in the world. — Gandhi',
+	'A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing. — George Bernhard Shaw',
+	'Most people do not listen with the intent to understand; they listen with the intent to reply.— Stephen Covey'
+]
+
+let ran = document.querySelector("#gen");
+let randomP= document.querySelector("#random");
+
+function getRandomItem(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const item = arr[randomIndex];
+    return item;
+}
+
+ran.addEventListener ("click", ()=>{
+    input.value = getRandomItem(quotesArr);
+})
 
 
 const quotes=[];
